@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Position</title>
+  <style>
+    body { height: 1500px; }
+    .box { width: 200px; height: 60px; margin: 10px; padding: 10px; background-color: lightblue; border: 1px solid black; }
+    .static { position: static; }
+    .relative { position: relative; left: 30px; top: 10px; background-color: lightgreen; }
+    .absolute { position: absolute; top: 20px; right: 20px; background-color: lightpink; }
+    .fixed { position: fixed; bottom: 10px; right: 10px; background-color: orange; }
+    .sticky { position: sticky; top: 0; background-color: yellow; }
+  </style>
+</head>
+<body>
+
+  <div class="box static">position: static</div>
+  <div class="box relative">position: relative</div>
+  <div class="box sticky">position: sticky</div>
+  <div class="box absolute">position: absolute</div>
+  <div class="box fixed">position: fixed</div>
+  <p>เลื่อนหน้าจอเพื่อดูผลของ fixed และ sticky</p>
+
+</body>
+</html>

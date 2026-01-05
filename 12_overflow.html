@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Overflow</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 80px;
+      margin: 15px;
+      padding: 10px;
+      border: 2px solid black;
+      background-color: lightgray;
+      font-size: 14px;
+    }
+    .visible { overflow: visible; }
+    .hidden { overflow: hidden; }
+    .scroll { overflow: scroll; }
+    .auto { overflow: auto; }
+  </style>
+</head>
+<body>
+
+  <div class="box visible">
+    overflow: visible <br>
+    ข้อความตัวอย่างนี้มีความยาวมากกว่าขนาดของกล่องที่กำหนดไว้
+    เนื้อหาจะไม่ถูกตัด และจะแสดงล้นออกมานอกกรอบกล่อง
+    ทำให้เห็นข้อความทั้งหมดแม้จะเกินพื้นที่ที่กำหนด
+  </div>
+  <div class="box hidden">
+    overflow: hidden <br>
+    ข้อความตัวอย่างนี้มีความยาวมากกว่าขนาดของกล่องที่กำหนดไว้
+    แต่เนื้อหาที่เกินออกมาจะถูกซ่อนไว้
+    ผู้ใช้จะไม่สามารถเห็นข้อความส่วนที่เกินจากกล่องได้
+  </div>
+  <div class="box scroll">
+    overflow: scroll <br>
+    ข้อความตัวอย่างนี้มีความยาวมากกว่าขนาดของกล่องที่กำหนดไว้
+    กล่องจะแสดงแถบเลื่อนทั้งแนวตั้งและแนวนอน
+    ผู้ใช้สามารถเลื่อนเพื่ออ่านข้อความทั้งหมดได้
+  </div>
+  <div class="box auto">
+    overflow: auto <br>
+    ข้อความตัวอย่างนี้มีความยาวมากกว่าขนาดของกล่องที่กำหนดไว้
+    ระบบจะแสดงแถบเลื่อนเฉพาะกรณีที่จำเป็น
+    เพื่อให้สามารถอ่านเนื้อหาทั้งหมดได้อย่างเหมาะสม
+  </div>
+
+</body>
+</html>
